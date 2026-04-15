@@ -1,0 +1,254 @@
+/* =============================================
+   PINKCORE DESIGN SYSTEM
+   Version 1.0 | pinkcore-web
+   Built by BotMakers.ai
+
+   SINGLE SOURCE OF TRUTH for all design tokens.
+   NEVER hardcode values that exist here.
+   ALWAYS use CSS variables.
+   ============================================= */
+
+:root {
+  /* ==========================================
+     PRIMARY BRAND COLORS
+     ========================================== */
+  --color-hot-pink: #E8005A;        /* PRIMARY — CTAs, buttons, logo ring, key highlights */
+  --color-core-pink: #D4537E;       /* SECONDARY — hover states, links, subheadings */
+  --color-blush: #F4C0D1;           /* SUBTLE — borders, dividers, input outlines */
+  --color-petal: #FBEAF0;           /* LIGHTEST — section backgrounds, card fills */
+  --color-candy: #FFD6E7;           /* TAGS — pills, badges, notification backgrounds */
+
+  /* ==========================================
+     NEUTRAL COLORS
+     ========================================== */
+  --color-ink: #1A1A1A;             /* PRIMARY TEXT — headings, body on light bg */
+  --color-white: #FFFFFF;           /* BACKGROUNDS — cards, nav, primary surfaces */
+  --color-soft-white: #F7F7F7;      /* PAGE BG — alternating sections */
+  --color-gray-light: #EEEEEE;      /* BORDERS — subtle dividers */
+  --color-gray-mid: #888888;        /* SECONDARY TEXT — captions, meta, placeholders */
+  --color-gray-dark: #444444;       /* BODY TEXT — paragraphs */
+
+  /* ==========================================
+     SEMANTIC COLORS
+     ========================================== */
+  --color-success: #22C55E;         /* Success states, confirmations */
+  --color-error: #EF4444;           /* Error states, warnings */
+  --color-warning: #F59E0B;         /* Warning states */
+
+  /* ==========================================
+     GRADIENTS
+     ========================================== */
+  --gradient-hero: linear-gradient(135deg, #E8005A 0%, #D4537E 50%, #F4C0D1 100%);
+  --gradient-card: linear-gradient(180deg, rgba(232,0,90,0.05) 0%, rgba(255,255,255,0) 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(26,26,26,0.8) 100%);
+
+  /* ==========================================
+     TYPOGRAPHY
+     ========================================== */
+  --font-display: 'Josefin Sans', sans-serif;   /* Logo, hero headlines, nav brand */
+  --font-heading: 'DM Sans', sans-serif;         /* Section headers, card titles, CTAs */
+  --font-body: 'DM Sans', sans-serif;            /* Body copy, descriptions, UI */
+  --font-editorial: 'Playfair Display', serif;   /* Pull quotes, special moments ONLY */
+
+  /* DISPLAY — Hero only */
+  --text-display: clamp(48px, 7vw, 80px);
+  --text-display-weight: 300;               /* Josefin Sans Light */
+  --text-display-spacing: 0.08em;           /* Wide tracking — signature of brand */
+
+  /* HEADINGS */
+  --text-h1: clamp(36px, 5vw, 56px);
+  --text-h2: clamp(28px, 4vw, 40px);
+  --text-h3: clamp(20px, 3vw, 28px);
+  --text-h4: clamp(18px, 2.5vw, 22px);
+  --text-heading-weight: 500;
+
+  /* BODY */
+  --text-body-lg: 18px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-body-weight: 400;
+  --text-body-line-height: 1.7;
+
+  /* UI ELEMENTS */
+  --text-label: 12px;
+  --text-label-weight: 500;
+  --text-label-spacing: 0.08em;
+  --text-micro: 11px;
+
+  /* BUTTON TEXT */
+  --text-btn: 14px;
+  --text-btn-weight: 600;
+  --text-btn-spacing: 0.05em;
+
+  /* ==========================================
+     SPACING SYSTEM
+     ========================================== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* SECTION PADDING */
+  --section-padding-y: clamp(60px, 8vw, 120px);
+  --section-padding-x: clamp(20px, 5vw, 80px);
+
+  /* CONTAINER */
+  --container-max: 1200px;
+  --container-padding: clamp(20px, 5vw, 60px);
+
+  /* ==========================================
+     BORDER RADIUS
+     ========================================== */
+  --radius-sm: 4px;       /* Tags, small elements */
+  --radius-md: 8px;       /* Buttons, inputs */
+  --radius-lg: 12px;      /* Cards */
+  --radius-xl: 16px;      /* Large cards, modals */
+  --radius-pill: 9999px;  /* Pills, tags, round buttons */
+  --radius-circle: 50%;   /* Avatars, icons */
+
+  /* ==========================================
+     SHADOWS
+     ========================================== */
+  --shadow-sm: 0 1px 3px rgba(232, 0, 90, 0.08);
+  --shadow-md: 0 4px 16px rgba(232, 0, 90, 0.12);
+  --shadow-lg: 0 8px 32px rgba(232, 0, 90, 0.16);
+  --shadow-card: 0 2px 12px rgba(26, 26, 26, 0.08);
+  --shadow-card-hover: 0 8px 32px rgba(26, 26, 26, 0.16);
+
+  /* ==========================================
+     ANIMATION TOKENS
+     ========================================== */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  --transition-page: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* =============================================
+   FADE UP ANIMATION — Section reveals
+   ============================================= */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 0.6s var(--transition-page) forwards;
+  opacity: 0;
+}
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+
+/* =============================================
+   BUTTON SYSTEM
+   ============================================= */
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  background: var(--color-hot-pink);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: var(--text-btn);
+  font-weight: var(--text-btn-weight);
+  letter-spacing: var(--text-btn-spacing);
+  padding: 14px 32px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-primary:hover { background: var(--color-core-pink); }
+.btn-primary:active { transform: scale(0.98); }
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--color-hot-pink);
+  font-family: var(--font-heading);
+  font-size: var(--text-btn);
+  font-weight: var(--text-btn-weight);
+  letter-spacing: var(--text-btn-spacing);
+  padding: 13px 32px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-hot-pink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-secondary:hover {
+  background: var(--color-petal);
+  border-color: var(--color-core-pink);
+  color: var(--color-core-pink);
+}
+
+/* GHOST BUTTON (on dark/pink backgrounds) */
+.btn-ghost {
+  background: transparent;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: var(--text-btn);
+  font-weight: var(--text-btn-weight);
+  padding: 13px 32px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: var(--color-white);
+}
+
+/* CTA SIZES */
+.btn-lg { padding: 18px 48px; font-size: 16px; }
+.btn-sm { padding: 10px 20px; font-size: 12px; }
+
+/* =============================================
+   LOGO COMPONENT
+   ============================================= */
+.pinkcore-logo {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.logo-pink { color: var(--color-ink); }
+.logo-core { color: var(--color-hot-pink); }
+.logo-ring { margin: 0 2px; flex-shrink: 0; }
+.logo-tagline {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  color: var(--color-core-pink);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 4px;
+}
