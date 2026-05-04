@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PinkCore Pilates Studio — Houston, TX</title>
-  <meta name="description" content="Boutique pilates studio in Houston, TX. Mat, Reformer, Barre, Prenatal & Private sessions. Book your class today.">
+  <title>PinkCore — Find Pilates Classes Near You | Houston</title>
+  <meta name="description" content="Discover and book pilates classes near you with PinkCore. Drop-in classes, trial sessions, and one-off events — all on one app. Launching in Houston.">
+  <meta name="keywords" content="pilates classes Houston, pilates near me, book pilates class, reformer pilates Houston, drop-in pilates">
+  <meta property="og:title" content="PinkCore — Find Your Class">
+  <meta property="og:description" content="Houston's pilates discovery app. Find classes near you, book instantly.">
+  <meta property="og:image" content="/images/og-image.png">
+  <meta property="og:url" content="https://pinkcore.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://pinkcore.app">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Josefin+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Josefin+Sans:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
   <link rel="stylesheet" href="css/design-system.css">
-  <link rel="stylesheet" href="css/studio.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -23,33 +31,29 @@
   <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ============================================
-       NAVIGATION
+       SECTION 1: NAV
        ============================================ -->
   <nav class="site-nav" id="site-nav">
     <div class="container">
       <div class="nav-inner">
         <!-- Logo -->
-        <a href="#" class="pinkcore-logo nav-logo" aria-label="PinkCore Pilates Studio — Home">
-          <span class="logo-pink">PINK</span><span class="logo-core">C</span><svg class="logo-ring" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="12" stroke="#E8005A" stroke-width="2.5"/>
-            <circle cx="16" cy="4" r="3" fill="#E8005A"/>
-            <circle cx="16" cy="28" r="3" fill="#E8005A"/>
-          </svg><span class="logo-core">RE</span>
+        <a href="#" class="nav-logo" aria-label="PinkCore — Home">
+          <img src="images/logo/pinkcore-logo.png" alt="PinkCore — Find Your Class" class="nav-logo-img">
         </a>
 
         <!-- Desktop Nav Links -->
         <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#classes">Classes</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#instructors">Team</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#for-studios">For Studios</a></li>
+          <li><a href="#beta-studios">Founding Partners</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#waitlist">Get Early Access</a></li>
         </ul>
 
         <!-- CTA + Hamburger -->
         <div class="nav-actions">
-          <a href="#booking" class="btn-primary btn-sm nav-cta">Book a Class</a>
+          <a href="#studio-cta" class="btn-secondary btn-sm nav-cta nav-cta-studio">List Your Studio</a>
+          <a href="#waitlist" class="btn-primary btn-sm nav-cta nav-cta-primary">Get Early Access</a>
           <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
             <span></span>
             <span></span>
@@ -63,85 +67,37 @@
   <!-- Mobile Menu Overlay -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <ul class="mobile-nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#classes">Classes</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#instructors">Team</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#for-studios">For Studios</a></li>
+      <li><a href="#beta-studios">Founding Partners</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#waitlist">Get Early Access</a></li>
     </ul>
-    <a href="#booking" class="btn-primary btn-lg mobile-cta">Book a Class</a>
+    <div class="mobile-cta-group">
+      <a href="#studio-cta" class="btn-secondary btn-lg mobile-cta">List Your Studio</a>
+      <a href="#waitlist" class="btn-primary btn-lg mobile-cta">Get Early Access</a>
+    </div>
   </div>
 
   <main id="main">
 
     <!-- ============================================
-         SECTION 1: HERO
+         SECTION 2: HERO
          ============================================ -->
     <section class="hero" id="hero">
-      <div class="hero-video-wrap">
-        <video class="hero-video" autoplay muted loop playsinline>
-          <source src="assets/studio-hero.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <p class="hero-label animate-on-scroll">PINKCORE PILATES STUDIO</p>
-        <h1 class="hero-headline animate-on-scroll">Move with intention.</h1>
-        <p class="hero-sub animate-on-scroll">Boutique pilates in the heart of Houston. Mat, Reformer, Barre &amp; more&mdash;classes for every body.</p>
-        <div class="hero-ctas animate-on-scroll">
-          <a href="#schedule" class="btn-primary btn-lg">View Schedule</a>
-          <a href="#booking" class="btn-ghost btn-lg">Book a Class</a>
-        </div>
-      </div>
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <span></span>
-      </div>
-    </section>
-
-    <!-- ============================================
-         SECTION 2: ABOUT
-         ============================================ -->
-    <section class="section about" id="about">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="about-content animate-on-scroll">
-              <p class="section-label">OUR STORY</p>
-              <h2 class="section-title">A studio built on<br>strength &amp; community.</h2>
-              <p class="about-text">PinkCore Pilates Studio was founded in 2019 with a simple belief: pilates should be accessible, empowering, and&mdash;yes&mdash;fun. What started as a small reformer studio in Montrose has grown into Houston's favorite boutique pilates destination.</p>
-              <p class="about-text">We believe every body deserves to feel strong. Whether you're a first-timer or a seasoned practitioner, our certified instructors will meet you exactly where you are.</p>
+        <div class="hero-split">
+          <div class="hero-content">
+            <h1 class="hero-headline animate-on-scroll">Find Your Class.</h1>
+            <p class="hero-sub animate-on-scroll">Discover pilates classes near you &mdash; starting now, today, or whenever you're ready. Houston's pilates community, all in one place.</p>
+            <div class="hero-ctas animate-on-scroll">
+              <a href="#waitlist" class="btn-primary btn-lg">Get Early Access</a>
+              <a href="#studio-cta" class="btn-secondary btn-lg">List Your Studio Free</a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="about-quote-card animate-on-scroll">
-              <blockquote class="pull-quote">
-                <p>&ldquo;Physical fitness is the first requisite of happiness.&rdquo;</p>
-                <cite>&mdash; Joseph Pilates</cite>
-              </blockquote>
-            </div>
-            <div class="about-values animate-on-scroll">
-              <div class="value-item">
-                <div class="value-icon"><i class="fa fa-heart"></i></div>
-                <div>
-                  <h4>Community First</h4>
-                  <p>A welcoming space for every body, every level.</p>
-                </div>
-              </div>
-              <div class="value-item">
-                <div class="value-icon"><i class="fa fa-certificate"></i></div>
-                <div>
-                  <h4>Certified Experts</h4>
-                  <p>Every instructor holds nationally recognized certifications.</p>
-                </div>
-              </div>
-              <div class="value-item">
-                <div class="value-icon"><i class="fa fa-star"></i></div>
-                <div>
-                  <h4>Results-Driven</h4>
-                  <p>Thoughtful programming designed for real progress.</p>
-                </div>
-              </div>
+          <div class="hero-mockup animate-on-scroll">
+            <div class="hero-phone-placeholder">
+              <p>[App Mockup]</p>
             </div>
           </div>
         </div>
@@ -149,701 +105,491 @@
     </section>
 
     <!-- ============================================
-         SECTION 3: CLASS TYPES
+         SECTION 3: SOCIAL PROOF BAR
          ============================================ -->
-    <section class="section classes" id="classes">
+    <section class="section social-proof-bar" id="social-proof">
+      <div class="container">
+        <p class="social-proof-heading animate-on-scroll">Houston's pilates community is joining PinkCore</p>
+        <div class="social-proof-stats animate-on-scroll">
+          <div class="stat-item">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Studios at Launch</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5,000+</span>
+            <span class="stat-label">Classes / Month</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Free</span>
+            <span class="stat-label">To List</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">iOS + Android</span>
+            <span class="stat-label">At Launch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: HOW IT WORKS (Consumer)
+         ============================================ -->
+    <section class="section" id="how-it-works">
       <div class="container">
         <div class="section-header text-center animate-on-scroll">
-          <p class="section-label">WHAT WE OFFER</p>
-          <h2 class="section-title">Find your practice.</h2>
-          <p class="section-subtitle">Six distinct class styles. One goal: help you feel incredible.</p>
+          <p class="section-label">HOW IT WORKS</p>
+          <h2 class="section-title">Find your class in 60 seconds.</h2>
+          <p class="section-subtitle">No more Googling 10 different studio websites. PinkCore shows you every pilates class near you, right now.</p>
         </div>
-        <div class="row class-grid">
-          <!-- Mat Pilates -->
-          <div class="col-md-6 col-lg-4">
-            <div class="class-card animate-on-scroll">
-              <div class="class-card-icon" style="background: linear-gradient(135deg, var(--color-hot-pink), var(--color-core-pink));">
-                <i class="fa fa-child"></i>
-              </div>
-              <h3>Mat Pilates</h3>
-              <p>The foundation of it all. Build core strength, flexibility, and body awareness on the mat. Perfect for beginners and pros alike.</p>
-              <div class="class-meta">
-                <span><i class="fa fa-clock-o"></i> 50 min</span>
-                <span><i class="fa fa-signal"></i> All Levels</span>
-              </div>
-            </div>
+        <div class="steps-grid">
+          <div class="step-card animate-on-scroll">
+            <span class="step-num">1</span>
+            <h3>Open the app</h3>
+            <p>Turn on location, see every pilates class near you on a live map.</p>
           </div>
-          <!-- Reformer -->
-          <div class="col-md-6 col-lg-4">
-            <div class="class-card animate-on-scroll">
-              <div class="class-card-icon" style="background: linear-gradient(135deg, var(--color-core-pink), var(--color-blush));">
-                <i class="fa fa-sliders"></i>
-              </div>
-              <h3>Reformer</h3>
-              <p>Spring-loaded resistance meets precision movement. Our signature reformer classes sculpt, lengthen, and challenge you in the best way.</p>
-              <div class="class-meta">
-                <span><i class="fa fa-clock-o"></i> 55 min</span>
-                <span><i class="fa fa-signal"></i> Int / Adv</span>
-              </div>
-            </div>
+          <div class="step-card animate-on-scroll">
+            <span class="step-num">2</span>
+            <h3>Find your class</h3>
+            <p>Filter by type, time, price, and distance. See what's starting soon.</p>
           </div>
-          <!-- Barre Fusion -->
-          <div class="col-md-6 col-lg-4">
-            <div class="class-card animate-on-scroll">
-              <div class="class-card-icon" style="background: linear-gradient(135deg, var(--color-blush), var(--color-candy));">
-                <i class="fa fa-music"></i>
-              </div>
-              <h3>Barre Fusion</h3>
-              <p>Pilates meets ballet meets burn. Small, isometric movements set to energizing music. You'll shake, you'll smile, you'll come back.</p>
-              <div class="class-meta">
-                <span><i class="fa fa-clock-o"></i> 45 min</span>
-                <span><i class="fa fa-signal"></i> All Levels</span>
-              </div>
-            </div>
-          </div>
-          <!-- Prenatal -->
-          <div class="col-md-6 col-lg-4">
-            <div class="class-card animate-on-scroll">
-              <div class="class-card-icon" style="background: linear-gradient(135deg, var(--color-candy), var(--color-petal));">
-                <i class="fa fa-heart"></i>
-              </div>
-              <h3>Prenatal Pilates</h3>
-              <p>Gentle, safe, and empowering movement for expecting mamas. Modified exercises that support your changing body every trimester.</p>
-              <div class="class-meta">
-                <span><i class="fa fa-clock-o"></i> 45 min</span>
-                <span><i class="fa fa-signal"></i> All Levels</span>
-              </div>
-            </div>
-          </div>
-          <!-- Power Pilates -->
-          <div class="col-md-6 col-lg-4">
-            <div class="class-card animate-on-scroll">
-              <div class="class-card-icon" style="background: linear-gradient(135deg, var(--color-hot-pink), #FF6B9D);">
-                <i class="fa fa-bolt"></i>
-              </div>
-              <h3>Power Pilates</h3>
-              <p>High-intensity, low-impact. Combines classical pilates with cardio bursts and resistance training. Leave feeling powerful.</p>
-              <div class="class-meta">
-                <span><i class="fa fa-clock-o"></i> 50 min</span>
-                <span><i class="fa fa-signal"></i> Int / Adv</span>
-              </div>
-            </div>
-          </div>
-          <!-- Private Sessions -->
-          <div class="col-md-6 col-lg-4">
-            <div class="class-card animate-on-scroll">
-              <div class="class-card-icon" style="background: linear-gradient(135deg, var(--color-core-pink), var(--color-hot-pink));">
-                <i class="fa fa-user"></i>
-              </div>
-              <h3>Private Sessions</h3>
-              <p>One-on-one attention tailored to your goals. Injury rehab, sport-specific training, or just a personalized practice&mdash;it's all about you.</p>
-              <div class="class-meta">
-                <span><i class="fa fa-clock-o"></i> 60 min</span>
-                <span><i class="fa fa-signal"></i> Custom</span>
-              </div>
-            </div>
+          <div class="step-card animate-on-scroll">
+            <span class="step-num">3</span>
+            <h3>Book instantly</h3>
+            <p>Reserve your spot, pay, and get confirmation &mdash; all in under 60 seconds.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         SECTION 4: SCHEDULE
+         SECTION 5: CONSUMER FEATURES
          ============================================ -->
-    <section class="section schedule" id="schedule">
+    <section class="section" id="features">
       <div class="container">
         <div class="section-header text-center animate-on-scroll">
-          <p class="section-label">WEEKLY SCHEDULE</p>
-          <h2 class="section-title">Find your time.</h2>
-          <p class="section-subtitle">Classes run seven days a week. Spots fill fast&mdash;book yours today.</p>
+          <p class="section-label">FEATURES</p>
+          <h2 class="section-title">Everything you need to find your perfect class.</h2>
         </div>
-
-        <!-- Day Tabs -->
-        <div class="schedule-tabs animate-on-scroll">
-          <button class="schedule-tab active" data-day="monday">Mon</button>
-          <button class="schedule-tab" data-day="tuesday">Tue</button>
-          <button class="schedule-tab" data-day="wednesday">Wed</button>
-          <button class="schedule-tab" data-day="thursday">Thu</button>
-          <button class="schedule-tab" data-day="friday">Fri</button>
-          <button class="schedule-tab" data-day="saturday">Sat</button>
-          <button class="schedule-tab" data-day="sunday">Sun</button>
-        </div>
-
-        <!-- Schedule Table -->
-        <div class="schedule-table animate-on-scroll">
-          <!-- Monday -->
-          <div class="schedule-day active" id="schedule-monday">
-            <div class="schedule-row">
-              <span class="schedule-time">6:00 AM</span>
-              <span class="schedule-class">Power Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
+        <div class="features-grid">
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
             </div>
-            <div class="schedule-row">
-              <span class="schedule-time">8:30 AM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">10:00 AM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:15 PM</span>
-              <span class="schedule-class">Barre Fusion</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">5:30 PM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">7:00 PM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">Beginner</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
+            <h3>Starting Soon Near You</h3>
+            <p>See classes starting in the next hour, today, or this week.</p>
           </div>
-
-          <!-- Tuesday -->
-          <div class="schedule-day" id="schedule-tuesday">
-            <div class="schedule-row">
-              <span class="schedule-time">6:00 AM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
             </div>
-            <div class="schedule-row">
-              <span class="schedule-time">9:00 AM</span>
-              <span class="schedule-class">Prenatal Pilates</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">10:30 AM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:00 PM</span>
-              <span class="schedule-class">Power Pilates</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">5:30 PM</span>
-              <span class="schedule-class">Barre Fusion</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">7:00 PM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
+            <h3>Trial Classes</h3>
+            <p>First-timers welcome. Find studios offering trial classes near you.</p>
           </div>
-
-          <!-- Wednesday -->
-          <div class="schedule-day" id="schedule-wednesday">
-            <div class="schedule-row">
-              <span class="schedule-time">6:00 AM</span>
-              <span class="schedule-class">Power Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4"/><polyline points="10,17 15,12 10,7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
             </div>
-            <div class="schedule-row">
-              <span class="schedule-time">8:30 AM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">Beginner</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">10:00 AM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:15 PM</span>
-              <span class="schedule-class">Barre Fusion</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">5:30 PM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">7:00 PM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
+            <h3>Drop-In Friendly</h3>
+            <p>No membership required. Book one class at a time, any studio.</p>
           </div>
-
-          <!-- Thursday -->
-          <div class="schedule-day" id="schedule-thursday">
-            <div class="schedule-row">
-              <span class="schedule-time">6:00 AM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <div class="schedule-row">
-              <span class="schedule-time">9:00 AM</span>
-              <span class="schedule-class">Prenatal Pilates</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">10:30 AM</span>
-              <span class="schedule-class">Power Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:00 PM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">5:30 PM</span>
-              <span class="schedule-class">Barre Fusion</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">7:00 PM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">Beginner</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
+            <h3>Map Discovery</h3>
+            <p>See every class pin on a live map. Find what's closest to you right now.</p>
           </div>
-
-          <!-- Friday -->
-          <div class="schedule-day" id="schedule-friday">
-            <div class="schedule-row">
-              <span class="schedule-time">6:00 AM</span>
-              <span class="schedule-class">Power Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">Int / Adv</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
-            <div class="schedule-row">
-              <span class="schedule-time">8:30 AM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">10:00 AM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:15 PM</span>
-              <span class="schedule-class">Barre Fusion</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">4:30 PM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">Beginner</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
+            <h3>One-Off Events</h3>
+            <p>Pop-up pilates, workshops, outdoor sessions. Never miss a special event.</p>
           </div>
-
-          <!-- Saturday -->
-          <div class="schedule-day" id="schedule-saturday">
-            <div class="schedule-row">
-              <span class="schedule-time">8:00 AM</span>
-              <span class="schedule-class">Power Pilates</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
             </div>
-            <div class="schedule-row">
-              <span class="schedule-time">9:30 AM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">11:00 AM</span>
-              <span class="schedule-class">Barre Fusion</span>
-              <span class="schedule-instructor">Mia K.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:30 PM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">Beginner</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-          </div>
-
-          <!-- Sunday -->
-          <div class="schedule-day" id="schedule-sunday">
-            <div class="schedule-row">
-              <span class="schedule-time">9:00 AM</span>
-              <span class="schedule-class">Mat Pilates</span>
-              <span class="schedule-instructor">Elena R.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">50 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">10:30 AM</span>
-              <span class="schedule-class">Reformer</span>
-              <span class="schedule-instructor">Sarah M.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">55 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
-            <div class="schedule-row">
-              <span class="schedule-time">12:00 PM</span>
-              <span class="schedule-class">Prenatal Pilates</span>
-              <span class="schedule-instructor">Jessica L.</span>
-              <span class="schedule-level">All Levels</span>
-              <span class="schedule-duration">45 min</span>
-              <a href="#booking" class="btn-primary btn-sm">Book</a>
-            </div>
+            <h3>Your Home Studio</h3>
+            <p>Set a favorite studio. See their full schedule front and center.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         SECTION 5: INSTRUCTORS
+         SECTION 6: HOW IT WORKS (Studio)
          ============================================ -->
-    <section class="section instructors" id="instructors">
+    <section class="section" id="for-studios">
       <div class="container">
         <div class="section-header text-center animate-on-scroll">
-          <p class="section-label">MEET THE TEAM</p>
-          <h2 class="section-title">Your instructors.</h2>
-          <p class="section-subtitle">Certified, passionate, and here to help you reach your goals.</p>
+          <p class="section-label">FOR STUDIOS</p>
+          <h2 class="section-title">Get discovered by pilates lovers in your city.</h2>
+          <p class="section-subtitle">List your studio free. Reach clients who are actively looking for classes right now.</p>
         </div>
-        <div class="row instructor-grid">
-          <!-- Sarah M. -->
-          <div class="col-sm-6 col-lg-3">
-            <div class="instructor-card animate-on-scroll">
-              <div class="instructor-avatar" style="background: linear-gradient(135deg, var(--color-hot-pink), var(--color-core-pink));">
-                <span class="avatar-initials">SM</span>
-              </div>
-              <h3>Sarah Mitchell</h3>
-              <p class="instructor-role">Studio Owner &amp; Lead Instructor</p>
-              <p class="instructor-bio">NCPT-certified with 12 years of experience. Sarah founded PinkCore with a mission to make pilates accessible to everyone in Houston.</p>
-              <div class="instructor-social">
-                <a href="#" aria-label="Sarah's Instagram"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
+        <div class="steps-grid">
+          <div class="step-card animate-on-scroll">
+            <span class="step-num">1</span>
+            <h3>Create your listing</h3>
+            <p>Add your studio profile, class schedule, and pricing in under 10 minutes.</p>
           </div>
-          <!-- Elena R. -->
-          <div class="col-sm-6 col-lg-3">
-            <div class="instructor-card animate-on-scroll">
-              <div class="instructor-avatar" style="background: linear-gradient(135deg, var(--color-core-pink), var(--color-blush));">
-                <span class="avatar-initials">ER</span>
-              </div>
-              <h3>Elena Rodriguez</h3>
-              <p class="instructor-role">Senior Mat Instructor</p>
-              <p class="instructor-bio">Former professional dancer turned pilates instructor. Elena brings grace, precision, and 8 years of teaching to every class.</p>
-              <div class="instructor-social">
-                <a href="#" aria-label="Elena's Instagram"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
+          <div class="step-card animate-on-scroll">
+            <span class="step-num">2</span>
+            <h3>Connect your scheduler</h3>
+            <p>Already use Mindbody, Mariana Tek, or another platform? Connect it in one click.</p>
           </div>
-          <!-- Jessica L. -->
-          <div class="col-sm-6 col-lg-3">
-            <div class="instructor-card animate-on-scroll">
-              <div class="instructor-avatar" style="background: linear-gradient(135deg, var(--color-blush), var(--color-candy));">
-                <span class="avatar-initials">JL</span>
-              </div>
-              <h3>Jessica Lee</h3>
-              <p class="instructor-role">Prenatal &amp; Reformer Specialist</p>
-              <p class="instructor-bio">Certified in pre/postnatal fitness, Jessica helps moms-to-be stay strong and confident throughout their journey. Also our reformer whisperer.</p>
-              <div class="instructor-social">
-                <a href="#" aria-label="Jessica's Instagram"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
+          <div class="step-card animate-on-scroll">
+            <span class="step-num">3</span>
+            <h3>Watch the bookings come in</h3>
+            <p>New clients discover your classes and book directly through PinkCore.</p>
           </div>
-          <!-- Mia K. -->
-          <div class="col-sm-6 col-lg-3">
-            <div class="instructor-card animate-on-scroll">
-              <div class="instructor-avatar" style="background: linear-gradient(135deg, var(--color-candy), var(--color-petal));">
-                <span class="avatar-initials">MK</span>
-              </div>
-              <h3>Mia Kim</h3>
-              <p class="instructor-role">Barre &amp; Power Instructor</p>
-              <p class="instructor-bio">High energy and all heart. Mia's barre fusion and power pilates classes are the most waitlisted on our schedule. Fair warning: she plays great music.</p>
-              <div class="instructor-social">
-                <a href="#" aria-label="Mia's Instagram"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="steps-cta text-center animate-on-scroll">
+          <a href="#studio-cta" class="btn-primary btn-lg">List Your Studio Free &rarr;</a>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         SECTION 6: PRICING
+         SECTION 7: STUDIO PRICING
          ============================================ -->
-    <section class="section pricing" id="pricing">
+    <section class="section" id="pricing">
       <div class="container">
         <div class="section-header text-center animate-on-scroll">
           <p class="section-label">PRICING</p>
           <h2 class="section-title">Simple, transparent pricing.</h2>
-          <p class="section-subtitle">No contracts. No hidden fees. Just great pilates.</p>
+          <p class="section-subtitle">Start free. Only pay when you grow.</p>
         </div>
-        <div class="row pricing-grid">
-          <!-- Drop-in -->
-          <div class="col-md-4">
-            <div class="pricing-card animate-on-scroll">
-              <div class="pricing-header">
-                <h3>Drop-In</h3>
-                <div class="pricing-price">
-                  <span class="price-amount">$35</span>
-                  <span class="price-period">/ class</span>
-                </div>
+        <div class="pricing-grid">
+          <!-- Starter -->
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <div class="pricing-price">
+                <span class="price-amount">$0</span>
+                <span class="price-period">/ month</span>
               </div>
-              <ul class="pricing-features">
-                <li><i class="fa fa-check"></i> Any single group class</li>
-                <li><i class="fa fa-check"></i> No commitment required</li>
-                <li><i class="fa fa-check"></i> Perfect for trying us out</li>
-                <li><i class="fa fa-check"></i> Includes mat &amp; towel</li>
-              </ul>
-              <a href="#booking" class="btn-secondary btn-block">Get Started</a>
+              <p class="price-detail">$1.00 per booking through PinkCore</p>
             </div>
+            <ul class="pricing-features">
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Basic studio listing</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Class schedule visible</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Consumer bookings</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Perfect for new studios</li>
+            </ul>
+            <a href="#studio-cta" class="btn-secondary btn-block">Start Free</a>
           </div>
-          <!-- 8-Pack (Featured) -->
-          <div class="col-md-4">
-            <div class="pricing-card pricing-featured animate-on-scroll">
-              <div class="pricing-badge">Most Popular</div>
-              <div class="pricing-header">
-                <h3>Monthly 8-Pack</h3>
-                <div class="pricing-price">
-                  <span class="price-amount">$220</span>
-                  <span class="price-period">/ month</span>
-                </div>
-                <p class="price-savings">Save $60 vs. drop-in</p>
+          <!-- Growth (Featured) -->
+          <div class="pricing-card pricing-featured animate-on-scroll">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Growth</h3>
+              <div class="pricing-price">
+                <span class="price-amount">$49</span>
+                <span class="price-period">/ month</span>
               </div>
-              <ul class="pricing-features">
-                <li><i class="fa fa-check"></i> 8 group classes per month</li>
-                <li><i class="fa fa-check"></i> Mix &amp; match any class type</li>
-                <li><i class="fa fa-check"></i> Roll over up to 2 unused classes</li>
-                <li><i class="fa fa-check"></i> 10% off private sessions</li>
-                <li><i class="fa fa-check"></i> Priority booking access</li>
-              </ul>
-              <a href="#booking" class="btn-primary btn-block">Get Started</a>
+              <p class="price-detail">$0.50 per booking</p>
             </div>
+            <ul class="pricing-features">
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Starter</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Featured placement in search</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Push notifications to nearby users</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Trial class badge</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Analytics dashboard</li>
+            </ul>
+            <a href="#studio-cta" class="btn-primary btn-block">Get Started</a>
           </div>
-          <!-- Unlimited -->
-          <div class="col-md-4">
-            <div class="pricing-card animate-on-scroll">
-              <div class="pricing-header">
-                <h3>Unlimited</h3>
-                <div class="pricing-price">
-                  <span class="price-amount">$299</span>
-                  <span class="price-period">/ month</span>
-                </div>
+          <!-- Pro -->
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-header">
+              <h3>Pro</h3>
+              <div class="pricing-price">
+                <span class="price-amount">$99</span>
+                <span class="price-period">/ month</span>
               </div>
-              <ul class="pricing-features">
-                <li><i class="fa fa-check"></i> Unlimited group classes</li>
-                <li><i class="fa fa-check"></i> All class types included</li>
-                <li><i class="fa fa-check"></i> 20% off private sessions</li>
-                <li><i class="fa fa-check"></i> Priority booking + waitlist</li>
-                <li><i class="fa fa-check"></i> Free guest pass (1x/month)</li>
-              </ul>
-              <a href="#booking" class="btn-secondary btn-block">Get Started</a>
+              <p class="price-detail">Flat fee &mdash; no per-booking charge</p>
             </div>
+            <ul class="pricing-features">
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Growth</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Promoted event listings</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Lead capture to your email list</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> SMS retargeting to viewers</li>
+              <li><svg class="check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5L2.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority support</li>
+            </ul>
+            <a href="#studio-cta" class="btn-secondary btn-block">Get Started</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-         SECTION 7: MOCK BOOKING
+         BETA SECTION 1: STUDIO FOUNDING PARTNER
          ============================================ -->
-    <section class="section booking" id="booking">
+    <section class="section beta-studios-section" id="beta-studios">
+      <div class="container">
+        <div class="beta-studios-grid">
+          <!-- Left Side -->
+          <div class="beta-studios-content animate-on-scroll">
+            <p class="beta-studios-label">NOW ACCEPTING APPLICATIONS</p>
+            <h2 class="beta-studios-headline">Be one of Houston's 4 founding studios.</h2>
+            <p class="beta-studios-sub">We're hand-selecting 4 Houston pilates studios to shape PinkCore before public launch. You get free featured access, white-glove setup, and a permanent place in our launch story.</p>
+            <div class="beta-studios-pills">
+              <span class="beta-pill">&#10022; Free Growth Tier</span>
+              <span class="beta-pill">&#10022; We Set You Up</span>
+              <span class="beta-pill">&#10022; Featured at Launch</span>
+            </div>
+            <button class="btn-primary btn-lg" id="open-studio-modal">Apply to Be a Founding Partner &rarr;</button>
+          </div>
+          <!-- Right Side — Invitation Card -->
+          <div class="beta-studios-card animate-on-scroll">
+            <p class="beta-card-label">FOUNDING PARTNER BENEFITS</p>
+            <ul class="beta-card-checklist">
+              <li><span class="beta-check">&#10003;</span> Free Growth tier for 6 weeks + 3 months after ($49/month value)</li>
+              <li><span class="beta-check">&#10003;</span> Personal in-studio setup &mdash; we come to you</li>
+              <li><span class="beta-check">&#10003;</span> Featured in PinkCore's Houston launch campaign</li>
+              <li><span class="beta-check">&#10003;</span> Your own invite code to bring your community to the beta</li>
+            </ul>
+            <p class="beta-card-spots">Only 4 spots available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Application Modal -->
+    <div class="modal-overlay" id="studio-modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <button class="modal-close" id="close-studio-modal" aria-label="Close modal">&times;</button>
+        <h2 class="modal-title" id="modal-title">Apply to Be a Founding Partner</h2>
+        <p class="modal-subtitle">We'll be in touch within 48 hours. Only 4 spots available.</p>
+        <form class="studio-app-form" id="studio-app-form" novalidate>
+          <!-- Honeypot -->
+          <div class="hp-field" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="studio-name">Studio Name *</label>
+            <input type="text" id="studio-name" name="studio_name" required placeholder="Your studio name">
+          </div>
+          <div class="form-group">
+            <label for="studio-owner-name">Your Name *</label>
+            <input type="text" id="studio-owner-name" name="owner_name" required placeholder="Your full name">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="studio-email">Email Address *</label>
+              <input type="email" id="studio-email" name="email" required placeholder="you@studio.com">
+            </div>
+            <div class="form-group">
+              <label for="studio-phone">Phone Number *</label>
+              <input type="tel" id="studio-phone" name="phone" required placeholder="(555) 555-5555">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="studio-address">Studio Neighborhood / Address *</label>
+            <input type="text" id="studio-address" name="address" required placeholder="e.g. Montrose, Houston TX">
+          </div>
+          <div class="form-group">
+            <label for="studio-platform">Current Booking Platform *</label>
+            <select id="studio-platform" name="booking_platform" required>
+              <option value="" disabled selected>Select your platform</option>
+              <option value="Arketa">Arketa</option>
+              <option value="Mindbody">Mindbody</option>
+              <option value="Mariana Tek">Mariana Tek</option>
+              <option value="Push Press">Push Press</option>
+              <option value="Square">Square</option>
+              <option value="Acuity">Acuity</option>
+              <option value="Other">Other</option>
+              <option value="None">I don't use one</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="studio-instagram">Instagram Handle (optional)</label>
+            <input type="text" id="studio-instagram" name="instagram" placeholder="@yourstudio">
+          </div>
+          <div class="form-group">
+            <label for="studio-why">Why do you want to be a PinkCore founding partner? (optional)</label>
+            <textarea id="studio-why" name="why" rows="3" placeholder="Tell us a little about your studio and what excites you about PinkCore..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-lg btn-block" id="studio-app-submit">Submit My Application</button>
+        </form>
+        <!-- Success State -->
+        <div class="modal-success" id="studio-app-success" style="display:none;">
+          <p class="modal-success-msg">We'll be in touch within 48 hours. 🩷</p>
+        </div>
+        <!-- Error State -->
+        <div class="modal-error" id="studio-app-error" style="display:none;">
+          <p>Something went wrong. Please try again.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         SECTION 8: STUDIO FEATURES
+         ============================================ -->
+    <section class="section" id="studio-features">
       <div class="container">
         <div class="section-header text-center animate-on-scroll">
-          <p class="section-label">BOOK A CLASS</p>
-          <h2 class="section-title">Ready to move?</h2>
-          <p class="section-subtitle">Three simple steps. That's it.</p>
+          <p class="section-label">STUDIO FEATURES</p>
+          <h2 class="section-title">Built for studio owners who don't have time for complicated software.</h2>
         </div>
+        <div class="studio-features-grid">
+          <div class="studio-feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Self-Serve Setup</h3>
+            <p>Go live in under 10 minutes. No calls, no demos, no waiting.</p>
+          </div>
+          <div class="studio-feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3>Connect Your Scheduler</h3>
+            <p>Works with Mindbody, Mariana Tek, Arketa, Push Press, and more. One click to connect.</p>
+          </div>
+          <div class="studio-feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+            </div>
+            <h3>Your Classes, Your Brand</h3>
+            <p>Full control over how your studio looks on PinkCore. Photos, descriptions, instructor bios.</p>
+          </div>
+          <div class="studio-feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Real Bookings</h3>
+            <p>Not just views. PinkCore sends you clients who are ready to book right now.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="booking-flow animate-on-scroll">
-          <!-- Step indicators -->
-          <div class="booking-steps">
-            <div class="booking-step-indicator active" data-step="1">
-              <span class="step-number">1</span>
-              <span class="step-label">Choose</span>
+    <!-- ============================================
+         SECTION 9: CONSUMER WAITLIST
+         ============================================ -->
+    <section class="section waitlist-section" id="waitlist">
+      <div class="container">
+        <div class="waitlist-wrap">
+          <div class="section-header text-center animate-on-scroll">
+            <p class="section-label">EARLY ACCESS</p>
+            <h2 class="section-title">Be first to know when PinkCore launches in Houston.</h2>
+            <p class="section-subtitle">Join the waitlist and get early access before we go live.</p>
+          </div>
+          <form class="waitlist-form animate-on-scroll" id="waitlist-form" novalidate>
+            <!-- Honeypot -->
+            <div class="hp-field" aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
             </div>
-            <div class="booking-step-line"></div>
-            <div class="booking-step-indicator" data-step="2">
-              <span class="step-number">2</span>
-              <span class="step-label">Confirm</span>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="waitlist-name">First Name *</label>
+                <input type="text" id="waitlist-name" name="first_name" required placeholder="Your first name" autocomplete="given-name">
+                <span class="form-error" id="error-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="waitlist-email">Email Address *</label>
+                <input type="email" id="waitlist-email" name="email" required placeholder="you@example.com" autocomplete="email">
+                <span class="form-error" id="error-email"></span>
+              </div>
             </div>
-            <div class="booking-step-line"></div>
-            <div class="booking-step-indicator" data-step="3">
-              <span class="step-number">3</span>
-              <span class="step-label">Booked!</span>
+            <div class="form-group">
+              <label for="waitlist-zip">Zip Code (optional)</label>
+              <input type="text" id="waitlist-zip" name="zip_code" placeholder="77001" maxlength="5" inputmode="numeric">
+            </div>
+            <div class="form-checkbox">
+              <label>
+                <input type="checkbox" name="is_studio_owner" value="yes">
+                <span>I'm a studio owner &mdash; I want to list my studio</span>
+              </label>
+            </div>
+            <button type="submit" class="btn-primary btn-lg btn-block" id="waitlist-submit">Get Early Access</button>
+          </form>
+          <!-- Success State -->
+          <div class="form-success" id="waitlist-success" style="display:none;">
+            <h3>You're on the list!</h3>
+            <p>We'll be in touch before launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 10: STUDIO CTA
+         ============================================ -->
+    <section class="section studio-cta-section" id="studio-cta">
+      <div class="container text-center">
+        <h2 class="studio-cta-headline animate-on-scroll">Your classes deserve to be discovered.</h2>
+        <p class="studio-cta-sub animate-on-scroll">Join hundreds of Houston studios listing on PinkCore. Free forever to get started.</p>
+        <div class="animate-on-scroll">
+          <a href="mailto:studio@pinkcore.app" class="btn-ghost btn-lg">List Your Studio Free &rarr;</a>
+        </div>
+        <p class="studio-cta-contact animate-on-scroll">Questions? Email <a href="mailto:studio@pinkcore.app">studio@pinkcore.app</a></p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 11: FAQ
+         ============================================ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-title">Common questions.</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is it really free to list my studio?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. The Starter tier is completely free. You only pay $1 per booking that comes through PinkCore. No monthly fee until you're ready to upgrade.</p>
             </div>
           </div>
-
-          <!-- Step 1: Choose -->
-          <div class="booking-panel active" id="booking-step-1">
-            <h3>Choose your class</h3>
-            <div class="booking-options">
-              <label class="booking-option">
-                <input type="radio" name="booking-class" value="mat" checked>
-                <div class="booking-option-card">
-                  <strong>Mat Pilates</strong>
-                  <span>Tomorrow &bull; 8:30 AM &bull; Elena R.</span>
-                </div>
-              </label>
-              <label class="booking-option">
-                <input type="radio" name="booking-class" value="reformer">
-                <div class="booking-option-card">
-                  <strong>Reformer</strong>
-                  <span>Tomorrow &bull; 10:00 AM &bull; Jessica L.</span>
-                </div>
-              </label>
-              <label class="booking-option">
-                <input type="radio" name="booking-class" value="barre">
-                <div class="booking-option-card">
-                  <strong>Barre Fusion</strong>
-                  <span>Tomorrow &bull; 12:15 PM &bull; Mia K.</span>
-                </div>
-              </label>
-              <label class="booking-option">
-                <input type="radio" name="booking-class" value="power">
-                <div class="booking-option-card">
-                  <strong>Power Pilates</strong>
-                  <span>Tomorrow &bull; 5:30 PM &bull; Sarah M.</span>
-                </div>
-              </label>
-            </div>
-            <button class="btn-primary btn-lg booking-next" data-next="2">Continue</button>
-          </div>
-
-          <!-- Step 2: Confirm -->
-          <div class="booking-panel" id="booking-step-2">
-            <h3>Confirm your details</h3>
-            <div class="booking-summary">
-              <div class="booking-summary-row">
-                <span>Class</span>
-                <strong id="booking-confirm-class">Mat Pilates</strong>
-              </div>
-              <div class="booking-summary-row">
-                <span>Date</span>
-                <strong>Tomorrow</strong>
-              </div>
-              <div class="booking-summary-row">
-                <span>Time</span>
-                <strong id="booking-confirm-time">8:30 AM</strong>
-              </div>
-              <div class="booking-summary-row">
-                <span>Instructor</span>
-                <strong id="booking-confirm-instructor">Elena R.</strong>
-              </div>
-              <div class="booking-summary-row booking-total">
-                <span>Total</span>
-                <strong>$35.00</strong>
-              </div>
-            </div>
-            <div class="booking-actions">
-              <button class="btn-secondary booking-back" data-prev="1">Back</button>
-              <button class="btn-primary btn-lg booking-next" data-next="3">Confirm Booking</button>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>I already use Mindbody / Mariana Tek / another platform. Do I have to switch?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Never. PinkCore connects to your existing scheduler. Your classes sync automatically. You keep using whatever you already use.</p>
             </div>
           </div>
-
-          <!-- Step 3: Booked -->
-          <div class="booking-panel" id="booking-step-3">
-            <div class="booking-success">
-              <div class="booking-success-icon">
-                <i class="fa fa-check-circle"></i>
-              </div>
-              <h3>You're booked!</h3>
-              <p>We've reserved your spot. See you on the mat tomorrow.</p>
-              <p class="booking-success-detail">A confirmation email has been sent to your inbox.</p>
-              <button class="btn-primary btn-lg booking-reset">Book Another Class</button>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>How is PinkCore different from ClassPass?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>ClassPass charges studios a discounted rate and controls pricing. On PinkCore, you set your own prices and keep your client relationships. We're a discovery tool, not a middleman that devalues your memberships.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>When does the app launch?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>We're launching in Houston in 2026. Sign up for early access and you'll be the first to know.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I list a drop-in class and a special event?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes &mdash; both. Regular classes, drop-in slots, one-off workshops, pop-up sessions. If it's pilates and it has a time and a place, it belongs on PinkCore.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if I'm just a solo instructor, not a studio?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>PinkCore works for independent instructors too. Create a profile, add your schedule, and reach clients looking for exactly what you teach.</p>
             </div>
           </div>
         </div>
@@ -851,116 +597,52 @@
     </section>
 
     <!-- ============================================
-         SECTION 8: CONTACT FORM
+         BETA SECTION 2: CONSUMER BETA TESTER
          ============================================ -->
-    <section class="section contact" id="contact">
+    <section class="section beta-consumers-section" id="beta-consumers">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="contact-info animate-on-scroll">
-              <p class="section-label">GET IN TOUCH</p>
-              <h2 class="section-title">Questions?<br>We'd love to hear from you.</h2>
-              <p>Whether you're curious about classes, pricing, or just want to say hi&mdash;drop us a line. We typically respond within 24 hours.</p>
-              <div class="contact-methods">
-                <div class="contact-method">
-                  <i class="fa fa-phone"></i>
-                  <span>(713) 555-0142</span>
-                </div>
-                <div class="contact-method">
-                  <i class="fa fa-envelope"></i>
-                  <span>hello@pinkcorepilates.com</span>
-                </div>
-                <div class="contact-method">
-                  <i class="fa fa-instagram"></i>
-                  <span>@pinkcorepilates</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 offset-lg-1">
-            <div class="contact-form-wrap animate-on-scroll">
-              <form class="contact-form" id="contact-form" novalidate>
-                <!-- Honeypot -->
-                <div class="hp-field" aria-hidden="true">
-                  <input type="text" name="website" tabindex="-1" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <label for="contact-name">Full Name</label>
-                  <input type="text" id="contact-name" name="name" required placeholder="Your name" autocomplete="name">
-                  <span class="form-error" id="error-name"></span>
-                </div>
-                <div class="form-group">
-                  <label for="contact-email">Email Address</label>
-                  <input type="email" id="contact-email" name="email" required placeholder="you@example.com" autocomplete="email">
-                  <span class="form-error" id="error-email"></span>
-                </div>
-                <div class="form-group">
-                  <label for="contact-message">Message</label>
-                  <textarea id="contact-message" name="message" required rows="5" placeholder="How can we help?"></textarea>
-                  <span class="form-error" id="error-message"></span>
-                </div>
-                <button type="submit" class="btn-primary btn-lg btn-block" id="contact-submit">
-                  <span class="btn-text">Send Message</span>
-                  <span class="btn-loading" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Sending...</span>
-                </button>
-              </form>
-              <!-- Success State -->
-              <div class="form-success" id="form-success" style="display:none;">
-                <div class="form-success-icon"><i class="fa fa-check-circle"></i></div>
-                <h3>Message sent!</h3>
-                <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
-              </div>
-              <!-- Error State -->
-              <div class="form-error-state" id="form-error-state" style="display:none;">
-                <div class="form-error-icon"><i class="fa fa-exclamation-circle"></i></div>
-                <h3>Something went wrong.</h3>
-                <p>Please try again or contact us directly at hello@pinkcorepilates.com.</p>
-                <button class="btn-secondary" id="form-retry">Try Again</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="beta-consumers-wrap">
+          <p class="beta-consumers-label animate-on-scroll">BETA TESTERS WANTED</p>
+          <h2 class="beta-consumers-headline animate-on-scroll">Be the first to find your class.</h2>
+          <p class="beta-consumers-sub animate-on-scroll">We're inviting a small group of Houston pilates lovers to test PinkCore before we launch to the city. Get early access, your first class on us, and help us build something Houston actually needs.</p>
 
-    <!-- ============================================
-         SECTION 9: LOCATION & HOURS
-         ============================================ -->
-    <section class="section location" id="location">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="location-info animate-on-scroll">
-              <p class="section-label">FIND US</p>
-              <h2 class="section-title">Visit the studio.</h2>
-              <div class="location-address">
-                <i class="fa fa-map-marker"></i>
-                <div>
-                  <strong>PinkCore Pilates Studio</strong>
-                  <p>2847 Westheimer Road, Suite 110<br>Houston, TX 77098</p>
-                </div>
-              </div>
-              <div class="location-hours">
-                <h4>Studio Hours</h4>
-                <table class="hours-table">
-                  <tr><td>Monday &ndash; Friday</td><td>5:30 AM &ndash; 8:30 PM</td></tr>
-                  <tr><td>Saturday</td><td>7:00 AM &ndash; 2:00 PM</td></tr>
-                  <tr><td>Sunday</td><td>8:00 AM &ndash; 1:00 PM</td></tr>
-                </table>
-              </div>
-              <div class="location-contact">
-                <p><i class="fa fa-phone"></i> (713) 555-0142</p>
-                <p><i class="fa fa-envelope"></i> hello@pinkcorepilates.com</p>
-              </div>
+          <div class="beta-benefits-grid animate-on-scroll">
+            <div class="beta-benefit-card">
+              <span class="beta-benefit-icon">🩷</span>
+              <h3 class="beta-benefit-title">$10 Free Credit</h3>
+              <p class="beta-benefit-body">Applied to your first booking through PinkCore. On us.</p>
+            </div>
+            <div class="beta-benefit-card">
+              <span class="beta-benefit-icon">&#x1F4F2;</span>
+              <h3 class="beta-benefit-title">Early Access</h3>
+              <p class="beta-benefit-body">Use the app before anyone else in Houston.</p>
+            </div>
+            <div class="beta-benefit-card">
+              <span class="beta-benefit-icon">&#x1F4AC;</span>
+              <h3 class="beta-benefit-title">Shape the Product</h3>
+              <p class="beta-benefit-body">Your feedback directly influences what we build next.</p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="map-placeholder animate-on-scroll">
-              <div class="map-inner">
-                <i class="fa fa-map-marker"></i>
-                <p>Montrose, Houston TX</p>
-                <span class="map-note">Interactive map coming soon</span>
+
+          <!-- Invite Code Section -->
+          <div class="beta-invite-section animate-on-scroll">
+            <label class="beta-invite-label">Have an invite code from your studio?</label>
+            <div class="beta-invite-row" id="beta-invite-row">
+              <input type="text" class="beta-invite-input" id="beta-invite-input" placeholder="Enter your code — e.g. COREFLOW24">
+              <button class="btn-primary beta-invite-btn" id="beta-invite-btn">Claim Your Access &rarr;</button>
+            </div>
+            <p class="beta-invite-note">Don't have a code? Join the waitlist above and we'll notify you when beta opens.</p>
+            <!-- Email follow-up (hidden initially) -->
+            <div class="beta-invite-email" id="beta-invite-email" style="display:none;">
+              <label class="beta-invite-label">What's your email so we can send your access link?</label>
+              <div class="beta-invite-row">
+                <input type="email" class="beta-invite-input" id="beta-invite-email-input" placeholder="you@example.com">
+                <button class="btn-primary beta-invite-btn" id="beta-invite-email-btn">Submit</button>
               </div>
+            </div>
+            <!-- Success -->
+            <div class="beta-invite-success" id="beta-invite-success" style="display:none;">
+              <p>You're on the beta list! 🩷 We'll be in touch soon.</p>
             </div>
           </div>
         </div>
@@ -970,71 +652,64 @@
   </main>
 
   <!-- ============================================
-       FOOTER
+       SECTION 12: FOOTER
        ============================================ -->
   <footer class="site-footer" id="footer">
     <div class="container">
-      <div class="row footer-grid">
+      <div class="footer-grid">
         <!-- Column 1: Brand -->
-        <div class="col-sm-6 col-lg-3">
+        <div class="footer-col">
           <div class="footer-brand">
-            <a href="#" class="pinkcore-logo footer-logo" aria-label="PinkCore Pilates Studio — Home">
+            <a href="#" class="pinkcore-logo footer-logo" aria-label="PinkCore — Home">
               <span class="logo-pink">PINK</span><span class="logo-core">C</span><svg class="logo-ring" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16" cy="16" r="12" stroke="#E8005A" stroke-width="2.5"/>
                 <circle cx="16" cy="4" r="3" fill="#E8005A"/>
                 <circle cx="16" cy="28" r="3" fill="#E8005A"/>
               </svg><span class="logo-core">RE</span>
             </a>
-            <p class="footer-tagline">Boutique pilates in the heart of Houston. Move with intention.</p>
+            <p class="footer-tagline">Find Your Class.</p>
+            <a href="https://instagram.com/pinkcore" class="footer-instagram" aria-label="PinkCore on Instagram">@pinkcore</a>
           </div>
         </div>
-        <!-- Column 2: Quick Links -->
-        <div class="col-sm-6 col-lg-3">
-          <h4 class="footer-heading">Quick Links</h4>
+        <!-- Column 2: Product -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Product</h4>
           <ul class="footer-links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#classes">Class Types</a></li>
-            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#for-studios">For Studios</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#booking">Book a Class</a></li>
+            <li><a href="#waitlist">Get Early Access</a></li>
           </ul>
         </div>
-        <!-- Column 3: Class Types -->
-        <div class="col-sm-6 col-lg-3">
-          <h4 class="footer-heading">Classes</h4>
+        <!-- Column 3: Company -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
-            <li><a href="#classes">Mat Pilates</a></li>
-            <li><a href="#classes">Reformer</a></li>
-            <li><a href="#classes">Barre Fusion</a></li>
-            <li><a href="#classes">Prenatal Pilates</a></li>
-            <li><a href="#classes">Power Pilates</a></li>
-            <li><a href="#classes">Private Sessions</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
           </ul>
         </div>
-        <!-- Column 4: Connect -->
-        <div class="col-sm-6 col-lg-3">
-          <h4 class="footer-heading">Connect</h4>
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
           <ul class="footer-links">
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#location">Find the Studio</a></li>
+            <li><a href="mailto:hello@pinkcore.app">hello@pinkcore.app</a></li>
+            <li><a href="mailto:studio@pinkcore.app">studio@pinkcore.app</a></li>
+            <li><a href="https://instagram.com/pinkcore" aria-label="PinkCore on Instagram">Instagram @pinkcore</a></li>
           </ul>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fa fa-play-circle"></i></a>
-            <a href="#" aria-label="Yelp"><i class="fa fa-yelp"></i></a>
-          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 PinkCore Pilates Studio. All rights reserved.</p>
-        <p class="footer-demo-note">This is a demo website built by <strong>BotMakers.ai</strong></p>
+        <p>&copy; 2026 PinkCore. All rights reserved.</p>
+        <p class="footer-botmakers">A <a href="https://botmakers.ai" target="_blank" rel="noopener">BotMakers.ai</a> product &mdash; Houston, TX</p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="js/studio.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/forms.js"></script>
 </body>
 </html>
