@@ -106,6 +106,16 @@
 
 ---
 
+## LEGAL PAGES
+- [x] privacy.html — Full privacy policy page (11 sections) with site nav + footer
+- [x] terms.html — Full terms of service page (15 sections) with site nav + footer
+- [x] .legal-page CSS styles added to main.css (max-width 720px, proper typography)
+- [x] Nav links point back to index.html sections with /#anchor pattern
+- [x] No forms.js included (not needed on legal pages)
+- [x] No scroll animations (not needed for legal text)
+
+---
+
 ## BLOCKERS / QUESTIONS
 (none currently)
 
@@ -121,4 +131,5 @@
 - No app mockup images yet — need designed assets for hero and feature sections
 - forms.js is still a placeholder — needs rewrite for waitlist form validation/submission
 - Consider adding entrance animations beyond fade-up (staggered reveals, etc.)
-- About and Contact pages (privacy.html, terms.html) are linked but not yet created
+- privacy.html and terms.html are now live with full legal content and matching site nav/footer
+- About and Contact pages are linked but not yet created

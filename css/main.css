@@ -1384,6 +1384,70 @@ h1, h2, h3, h4 {
 }
 
 /* =============================================
+   LEGAL PAGES (Privacy, Terms)
+   ============================================= */
+.legal-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 160px var(--container-padding) var(--space-24);
+}
+
+.legal-page h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 300;
+  color: var(--color-ink);
+  margin-bottom: var(--space-3);
+}
+
+.legal-page .legal-updated {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--color-gray-mid);
+  margin-bottom: var(--space-12);
+}
+
+.legal-page h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  font-weight: 500;
+  color: var(--color-ink);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+}
+
+.legal-page p {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-gray-dark);
+  line-height: 1.8;
+  margin-bottom: var(--space-4);
+}
+
+.legal-page ul {
+  list-style: disc;
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.legal-page li {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-gray-dark);
+  line-height: 1.8;
+  margin-bottom: var(--space-2);
+}
+
+.legal-page a {
+  color: var(--color-hot-pink);
+  text-decoration: underline;
+}
+
+.legal-page a:hover {
+  color: var(--color-core-pink);
+}
+
+/* =============================================
    RESPONSIVE — Tablet (max 991px)
    ============================================= */
 @media (max-width: 991px) {
